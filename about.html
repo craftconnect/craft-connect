@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Craft Connect</title>
+
+
+  <link rel="shortcut icon" href="./assets/images/logo/favicon.ico" type="image/x-icon">
+
+
+  <link rel="stylesheet" href="./assets/css/style-prefix.css">
+  <link rel="stylesheet" href="./assets/css/footer.css">
+  <link rel="stylesheet" href="./assets/css/feature.css">
+  <link rel="stylesheet" href="./assets/css/product.css">
+  <link rel="stylesheet" href="./assets/css/header.css">
+  <link rel="stylesheet" href="./assets/css/about_page.css">
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+
+</head>
+
+
+<body>
+
+
+
+  <header>
+
+    <div class="header-main">
+
+      <a href="./home.html" class="header-logo">
+        <img src="./assets/images/logo/main-logo.png" alt="logo" width="120" height="36">
+      </a>
+
+      <div class="search-bar">
+        <input type="text" placeholder="Search Here">
+        <button type="submit"><img src="./assets/images/logo/search.png" alt=""></button>
+      </div>
+
+      <div class="user-actions">
+        <a href="./index.html"><ion-icon name="person-outline"></ion-icon></a>
+        <ion-icon name="heart-outline" id="openPopupButton2"></ion-icon>
+        <ion-icon name="bag-handle-outline" id="openPopupButton1"></ion-icon>
+      </div>
+
+
+      <ul class="social" id="openPopupButton3">
+        <li><a href="#" class="social-link"><ion-icon name="logo-facebook"></ion-icon></a></li>
+        <li><a href="#" class="social-link"><ion-icon name="logo-twitter"></ion-icon></a></li>
+        <li><a href="#" class="social-link"><ion-icon name="logo-instagram"></ion-icon></a></li>
+        <li><a href="#" class="social-link"><ion-icon name="logo-linkedin"></ion-icon></a></li>
+      </ul>
+
+    </div>
+
+
+
+    <nav class="desktop-navigation-menu">
+      <div class="container">
+        <ul class="desktop-menu-category-list">
+          <li class="menu-category"><a href="./home.html" class="menu-title">Home</a></li>
+          <li class="menu-category"><a href="./catagories.html" class="menu-title">Categories</a></li>
+          <li class="menu-category"><a href="./about.html" class="menu-title">About</a></li>
+          <li class="menu-category"><a href="./contact.html" class="menu-title">Contact Us</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <div id="popup1" class="popup">
+      <div class="popup-content">
+        <span class="close" onclick="closePopup1()">&times;</span>
+        <img src="./assets/images/cart.gif" alt="empty_cart">
+        <h2>Sorry! Your cart is empty</h2>
+      </div>
+    </div>
+
+    <div id="popup2" class="popup">
+      <div class="popup-content">
+        <span class="close" onclick="closePopup2()">&times;</span>
+        <img src="./assets/images/wishlist.gif" alt="empty_cart">
+        <h2>Sorry! Your wishlist is empty</h2>
+      </div>
+    </div>
+
+    <div id="popup3" class="popup">
+      <div class="popup-content">
+        <span class="close" onclick="closePopup3()">&times;</span>
+        <img src="./assets/images/social.gif" alt="empty_cart">
+        <h2>Sorry! Our social handles are currently out of service</h2>
+      </div>
+    </div>
+
+    <div id="popup4" class="popup">
+      <div class="popup-content">
+        <span class="close" onclick="closePopup4()">&times;</span>
+        <img src="./assets/images/social.gif" alt="empty_cart">
+        <h2>Sorry! somthing went wrong </h2>
+      </div>
+    </div>
+
+  </header>
+
+
+  <main>
+
+    <div class="about">
+      <h1>OUR MISSION</h1>
+      <p>
+        At Craft Connect, our mission is to celebrate and preserve India's rich cultural heritage by providing a
+        meaningful platform for local artisans to showcase their exceptional handicrafts to the world. We firmly believe
+        in the value of traditional art forms and the skilled craftsmanship that goes into creating each unique piece.
+        By connecting these talented artisans with a global audience, we aim to empower them economically while
+        promoting sustainable practices that support their communities. Through our diverse collection of exquisite
+        pottery, textiles, woodwork, metalwork, jewelry, and more, we endeavor to promote appreciation for the artistry
+        and cultural significance of Indian handicrafts.<br><br>Join us in our journey to build bridges of cultural
+        exchange and contribute to the sustainable growth of India's artistic traditions. Together, we can make a
+        meaningful impact, ensuring that these beautiful crafts continue to thrive for generations to come.
+      </p>
+      <h2>WHY ChOOSE US ?</h2>
+      <ul>
+        <li>50+ Catagories</li>
+        <li>50,000+ Products</li>
+        <li>3,000+ Seller Networks</li>
+        <li>3,00,000+ Customers</li>
+        <li>24X7 Customer Support</li>
+        <li>International Shipping</li>
+        <li>Cash on Delivary (in India)</li>
+        <li>Smooth Transaction (all card, bank tranfer & UPI accepted)</li>
+      </ul>
+    </div>
+
+
+    <div class="middle">
+      <h3>WHAT PEOPLE SAY ?</h3>
+    </div>
+    <div class="review">
+      <figure class="snip">
+        <img src="./assets/images/user-1.jpg" alt="profile-sample3" class="profile" />
+        <figcaption>
+          <h2>Utsav Das</h2>
+          <h4>Mumbai , India</h4>
+          <blockquote>Craft Connect has been an absolute delight! The quality of the handicrafts I received was
+            exceptional, and the attention to detail truly reflects the artistry of Indian craftsmen. I highly recommend
+            their platform to anyone looking to embrace the beauty of traditional Indian crafts.</blockquote>
+        </figcaption>
+      </figure>
+      <figure class="snip hover"><img src="./assets/images/user-2.jpg" alt="profile-sample5" class="profile" />
+        <figcaption>
+          <h2>Madhuparna Das</h2>
+          <h4>Kolkata , India</h4>
+          <blockquote>Craft Connect's commitment to supporting local artisans is commendable. I purchased a stunning
+            wooden wall hanging, and I was blown away by its craftsmanship. It's heartwarming to know that my purchase
+            contributes to the livelihood of talented craftsmen. A big thumbs up!</blockquote>
+        </figcaption>
+      </figure>
+      <figure class="snip"><img src="./assets/images/user-3.jpg" alt="profile-sample6" class="profile" />
+        <figcaption>
+          <h2>Arnab Koley</h2>
+          <h4>New Delhi , India</h4>
+          <blockquote>Craft Connect provides a platform for real art lovers! Their collection showcases the artistry of
+            India's craftsmen, and I couldn't be happier with my purchase. The product descriptions are informative, and
+            I appreciate the care they put into ensuring the products' authenticity. Highly satisfied!</blockquote>
+        </figcaption>
+      </figure>
+    </div>
+
+
+
+  </main>
+
+
+
+
+
+  <footer>
+    <div class="footer-bottom">
+      <div class="container">
+        <img src="./assets/images/payment.png" alt="payment method" class="payment-img">
+        <p class="copyright">
+          COPYRIGHT &copy; <a href="./home.html">CRAFTCONNECT.IN</a> | ALL RIGHTS RESERVED
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="./assets/js/about.js"></script>
+  <script src="./assets/js/popup.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>

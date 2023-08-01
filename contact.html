@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Craft Connect</title>
+
+
+  <link rel="shortcut icon" href="./assets/images/logo/favicon.ico" type="image/x-icon">
+
+
+  <link rel="stylesheet" href="./assets/css/style-prefix.css">
+  <link rel="stylesheet" href="./assets/css/footer.css">
+  <link rel="stylesheet" href="./assets/css/feature.css">
+  <link rel="stylesheet" href="./assets/css/product.css">
+  <link rel="stylesheet" href="./assets/css/header.css">
+  <link rel="stylesheet" href="./assets/css/contact_page.css">
+
+
+</head>
+
+
+<body>
+
+  <header>
+
+    <div class="header-main">
+
+      <a href="./home.html" class="header-logo">
+        <img src="./assets/images/logo/main-logo.png" alt="logo" width="120" height="36">
+      </a>
+
+      <div class="search-bar">
+        <input type="text" placeholder="Search Here">
+        <button type="submit"><img src="./assets/images/logo/search.png" alt=""></button>
+      </div>
+
+      <div class="user-actions">
+        <a href="./index.html"><ion-icon name="person-outline"></ion-icon></a>
+        <ion-icon name="heart-outline" id="openPopupButton2"></ion-icon>
+        <ion-icon name="bag-handle-outline" id="openPopupButton1"></ion-icon>
+      </div>
+
+
+      <ul class="social" id="openPopupButton3">
+        <li><a href="#" class="social-link"><ion-icon name="logo-facebook"></ion-icon></a></li>
+        <li><a href="#" class="social-link"><ion-icon name="logo-twitter"></ion-icon></a></li>
+        <li><a href="#" class="social-link"><ion-icon name="logo-instagram"></ion-icon></a></li>
+        <li><a href="#" class="social-link"><ion-icon name="logo-linkedin"></ion-icon></a></li>
+      </ul>
+
+    </div>
+
+
+
+    <nav class="desktop-navigation-menu">
+      <div class="container">
+        <ul class="desktop-menu-category-list">
+          <li class="menu-category"><a href="./home.html" class="menu-title">Home</a></li>
+          <li class="menu-category"><a href="./catagories.html" class="menu-title">Categories</a></li>
+          <li class="menu-category"><a href="./about.html" class="menu-title">About</a></li>
+          <li class="menu-category"><a href="./contact.html" class="menu-title">Contact Us</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <div id="popup1" class="popup">
+      <div class="popup-content">
+        <span class="close" onclick="closePopup1()">&times;</span>
+        <img src="./assets/images/cart.gif" alt="empty_cart">
+        <h2>Sorry! Your cart is empty</h2>
+      </div>
+    </div>
+
+    <div id="popup2" class="popup">
+      <div class="popup-content">
+        <span class="close" onclick="closePopup2()">&times;</span>
+        <img src="./assets/images/wishlist.gif" alt="empty_cart">
+        <h2>Sorry! Your wishlist is empty</h2>
+      </div>
+    </div>
+
+    <div id="popup3" class="popup">
+      <div class="popup-content">
+        <span class="close" onclick="closePopup3()">&times;</span>
+        <img src="./assets/images/social.gif" alt="empty_cart">
+        <h2>Sorry! Our social handles are currently out of service</h2>
+      </div>
+    </div>
+
+    <div id="popup4" class="popup">
+      <div class="popup-content">
+        <span class="close" onclick="closePopup4()">&times;</span>
+        <img src="./assets/images/social.gif" alt="empty_cart">
+        <h2>Sorry! somthing went wrong </h2>
+      </div>
+    </div>
+
+  </header>
+
+
+  <main>
+
+    <div class="address">
+      <table>
+        <tr>
+          <td class="label">Street</td>
+          <td class="text">Shahpur Jat</td>
+          <td class="label">City/Town</td>
+          <td class="text">New Delhi</td>
+        </tr>
+        <tr>
+          <td class="label">State/Province/Region</td>
+          <td class="text">Delhi</td>
+          <td class="label">Zip/Postal Code</td>
+          <td class="text">110049</td>
+        </tr>
+        <tr>
+          <td class="label">Country</td>
+          <td class="text">India</td>
+          <td class="label">Latitude, Longitude</td>
+          <td class="text">28.63026, 77.138362</td>
+        </tr>
+        <tr>
+          <td class="label">Ph. No.</td>
+          <td class="text">1-800-4254449/1-800-4254450</td>
+          <td class="label">Email</td>
+          <td class="mail" onclick="composeEmail()">info@craftconnect.in</td>
+        </tr>
+      </table>
+      <div class="map">
+        <div class="mapouter">
+          <div class="gmap_canvas"><iframe class="gmap_iframe" width="100%" frameborder="0" scrolling="no"
+              marginheight="0" marginwidth="0"
+              src="https://maps.google.com/maps?width=400&amp;height=400&amp;hl=en&amp;q=Shahpur Jat&amp;t=&amp;z=15&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe><a
+              href="https://connectionsgame.org/">Connections Game</a></div>
+          <style>
+            .mapouter {
+              position: relative;
+              text-align: right;
+              width: 100%;
+              height: 400px;
+            }
+
+            .gmap_canvas {
+              overflow: hidden;
+              background: none !important;
+              width: 100%;
+              height: 400px;
+            }
+
+            .gmap_iframe {
+              height: 400px !important;
+            }
+          </style>
+        </div>
+      </div>
+    </div>
+
+    <div class="forms">
+      <div class="form-style-10">
+        <h1>Become a seller 🏪<span>Grow your business with us</span></h1>
+        <form>
+
+          <div class="section"><span>1</span>Name & Address</div>
+          <div class="inner-wrap">
+            <label>Your Full Name <input type="text" name="field1" /></label>
+            <label>Address <textarea name="field2"></textarea></label>
+          </div>
+
+
+          <div class="section"><span>2</span>Email & Phone</div>
+          <div class="inner-wrap">
+            <label>Email Address <input type="email" name="field3" /></label>
+            <label>Phone Number <input type="text" name="field4" /></label>
+          </div>
+
+          <div class="section"><span>3</span>Business</div>
+          <div class="inner-wrap">
+            <label>Describe your business properly<textarea name="field5"></textarea></label>
+          </div>
+
+
+          <div class="section"><span>4</span>Passwords</div>
+          <div class="inner-wrap">
+            <label>Password <input type="password" name="field6" /></label>
+            <label>Confirm Password <input type="password" name="field7" /></label>
+          </div>
+
+
+
+          <div class="button-section">
+            <input type="submit" name="Sign Up" />
+            <span class="privacy-policy">
+              <input type="checkbox" name="field7">You agree to our Terms and Policy.
+            </span>
+          </div>
+        </form>
+      </div>
+
+
+      <div class="form-style-10">
+        <h1>Report for Product 🚫<span>Describe the issue with out product</span></h1>
+        <form>
+
+          <div class="section"><span>1</span>Email & Phone</div>
+          <div class="inner-wrap">
+            <label>Email Address <input type="email" name="field8" /></label>
+            <label>Phone Number <input type="text" name="field9" /></label>
+          </div>
+
+
+          <div class="section"><span>2</span>Product info</div>
+          <div class="inner-wrap">
+            <label>Product ID<input type="text" name="field10" /></label>
+            <label>Invoice No.<input type="text" name="field11" /></label>
+            <label>Purchase Date<input type="date" name="field12" /></label>
+          </div>
+
+          <div class="section"><span>3</span>Problem</div>
+          <div class="inner-wrap">
+            <label>Describe the prombem of the product properly<textarea name="field13"></textarea></label>
+          </div>
+
+          <div class="section"><span>4</span>Passwords</div>
+          <div class="inner-wrap">
+            <label>Password <input type="password" name="field14" /></label>
+            <label>Confirm Password <input type="password" name="field15" /></label>
+          </div>
+
+
+          <div class="button-section">
+            <input type="submit" name="Sign Up" />
+            <span class="privacy-policy">
+              <input type="checkbox" name="field7">You agree to our Terms and Policy.
+            </span>
+          </div>
+        </form>
+      </div>
+
+      <div class="form-style-10">
+        <h1>Feedback Form 📝<span>Share your feedback, suggestion or grievance with us</span></h1>
+        <form>
+
+          <div class="section"><span>1</span>Email & Phone</div>
+          <div class="inner-wrap">
+            <label>Email Address <input type="email" name="field16" /></label>
+            <label>Phone Number <input type="text" name="field17" /></label>
+          </div>
+
+          <div class="section"><span>2</span>Type</div>
+          <div class="inner-wrap">
+            <label><input type="radio" name="field3" />Feedback</label>
+            <label><input type="radio" name="field3" />Suggestion</label>
+            <label><input type="radio" name="field3" />Grievance</label>
+          </div>
+
+          <div class="section"><span>3</span>Details</div>
+          <div class="inner-wrap">
+            <label>Please write to us<textarea name="field18"></textarea></label>
+          </div>
+
+
+          <div class="section"><span>4</span>Passwords</div>
+          <div class="inner-wrap">
+            <label>Password <input type="password" name="field19" /></label>
+            <label>Confirm Password <input type="password" name="field20" /></label>
+          </div>
+
+
+          <div class="button-section">
+            <input type="submit" name="Sign Up" />
+            <span class="privacy-policy">
+              <input type="checkbox" name="field7">You agree to our Terms and Policy.
+            </span>
+          </div>
+        </form>
+      </div>
+
+
+
+    </div>
+
+
+  </main>
+
+  <footer>
+    <div class="footer-bottom">
+      <div class="container">
+        <img src="./assets/images/payment.png" alt="payment method" class="payment-img">
+        <p class="copyright">
+          COPYRIGHT &copy; <a href="./home.html">CRAFTCONNECT.IN</a> | ALL RIGHTS RESERVED
+        </p>
+      </div>
+    </div>
+  </footer>
+
+
+  <script src="./assets/js/contact.js"></script>
+  <script src="./assets/js/popup.js"></script>
+
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>

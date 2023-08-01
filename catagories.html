@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Craft Connect-catagories</title>
+
+
+    <link rel="shortcut icon" href="./assets/images/logo/favicon.ico" type="image/x-icon">
+
+
+    <link rel="stylesheet" href="./assets/css/style-prefix.css">
+    <link rel="stylesheet" href="./assets/css/footer.css">
+    <link rel="stylesheet" href="./assets/css/header.css">
+    <link rel="stylesheet" href="./assets/css/catagory_page.css">
+
+
+</head>
+
+
+<body>
+
+    <header>
+
+        <div class="header-main">
+
+            <a href="./home.html" class="header-logo">
+                <img src="./assets/images/logo/main-logo.png" alt="logo" width="120" height="36">
+            </a>
+
+            <div class="search-bar">
+                <input type="text" placeholder="Search Here">
+                <button type="submit"><img src="./assets/images/logo/search.png" alt=""></button>
+            </div>
+
+            <div class="user-actions">
+                <a href="./index.html"><ion-icon name="person-outline"></ion-icon></a>
+                <ion-icon name="heart-outline" id="openPopupButton2"></ion-icon>
+                <ion-icon name="bag-handle-outline" id="openPopupButton1"></ion-icon>
+            </div>
+
+
+            <ul class="social" id="openPopupButton3">
+                <li><a href="#" class="social-link"><ion-icon name="logo-facebook"></ion-icon></a></li>
+                <li><a href="#" class="social-link"><ion-icon name="logo-twitter"></ion-icon></a></li>
+                <li><a href="#" class="social-link"><ion-icon name="logo-instagram"></ion-icon></a></li>
+                <li><a href="#" class="social-link"><ion-icon name="logo-linkedin"></ion-icon></a></li>
+            </ul>
+
+        </div>
+
+
+
+        <nav class="desktop-navigation-menu">
+            <div class="container">
+                <ul class="desktop-menu-category-list">
+                    <li class="menu-category"><a href="./home.html" class="menu-title">Home</a></li>
+                    <li class="menu-category"><a href="./catagories.html" class="menu-title">Categories</a></li>
+                    <li class="menu-category"><a href="./about.html" class="menu-title">About</a></li>
+                    <li class="menu-category"><a href="./contact.html" class="menu-title">Contact Us</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <div id="popup1" class="popup">
+            <div class="popup-content">
+                <span class="close" onclick="closePopup1()">&times;</span>
+                <img src="./assets/images/cart.gif" alt="empty_cart">
+                <h2>Sorry! Your cart is empty</h2>
+            </div>
+        </div>
+
+        <div id="popup2" class="popup">
+            <div class="popup-content">
+                <span class="close" onclick="closePopup2()">&times;</span>
+                <img src="./assets/images/wishlist.gif" alt="empty_cart">
+                <h2>Sorry! Your wishlist is empty</h2>
+            </div>
+        </div>
+
+        <div id="popup3" class="popup">
+            <div class="popup-content">
+                <span class="close" onclick="closePopup3()">&times;</span>
+                <img src="./assets/images/social.gif" alt="empty_cart">
+                <h2>Sorry! Our social handles are currently out of service</h2>
+            </div>
+        </div>
+
+        <div id="popup4" class="popup">
+            <div class="popup-content">
+                <span class="close" onclick="closePopup4()">&times;</span>
+                <img src="./assets/images/social.gif" alt="empty_cart">
+                <h2>Sorry! somthing went wrong </h2>
+            </div>
+        </div>
+
+    </header>
+
+
+    <main>
+
+        <div class="dropdown">
+            <div class="collapsible img1">
+                <h3>Wooden Crafts</h3>
+                <div class="content">
+                    <div class="inner-content" onclick="showProductDetails('Wooden-1')">
+                        <a href="#productDetails">
+                            <img src="./assets/images/Wooden/wooden1.webp" alt="html.png">
+                            <h4>Ganesha Wall Hanging</h4>
+                        </a>
+                    </div>
+                    <div class="inner-content" onclick="showProductDetails('Wooden-2')">
+                        <a href="#productDetails">
+                            <img src="./assets/images/Wooden/wooden2.webp" alt="css.png">
+                            <h4>Ganesh Card Hanging</h4>
+                        </a>
+                    </div>
+                    <div class="inner-content" onclick="showProductDetails('Wooden-3')">
+                        <a href="#productDetails">
+                            <img src="./assets/images/Wooden/wooden3.webp" alt="js.png">
+                            <h4>Polyresin Wall Hanging</h4>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="collapsible img2">
+                <h3>Bronze Crafts</h3>
+                <div class="content">
+                    <div class="inner-content" onclick="showProductDetails('Bronze-1')">
+                        <a href="#productDetails">
+                            <img src="./assets/images/Bronze/bronze1.webp" alt="html.png">
+                            <h4>Lord Hanuman Idol</h4>
+                        </a>
+                    </div>
+                    <div class="inner-content" onclick="showProductDetails('Bronze-2')">
+                        <a href="#productDetails">
+                            <img src="./assets/images/Bronze/bronze2.webp" alt="css.png">
+                            <h4>Lord Buddha Idol</h4>
+                        </a>
+                    </div>
+                    <div class="inner-content" onclick="showProductDetails('Bronze-3')">
+                        <a href="#productDetails">
+                            <img src="./assets/images/Bronze/bronze3.webp" height="100px" width="auto" alt="js.png">
+                            <h4>Lion Showpiece Figurine</h4>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="collapsible img3">
+                <h3>Marble Crafts</h3>
+                <div class="content">
+                    <div class="inner-content" onclick="showProductDetails('Marble-1')">
+                        <a href="#productDetails">
+                            <img src="./assets/images/Marble/marble1.webp" alt="html.png">
+                            <h4>Lord Ganesha Idol</h4>
+                        </a>
+                    </div>
+                    <div class="inner-content" onclick="showProductDetails('Marble-2')">
+                        <a href="#productDetails">
+                            <img src="./assets/images/Marble/marble2.webp" alt="css.png">
+                            <h4>Ridhi Sidhi on chowki</h4>
+                        </a>
+                    </div>
+                    <div class="inner-content" onclick="showProductDetails('Marble-3')">
+                        <a href="#productDetails">
+                            <img src="./assets/images/Marble/marble3.webp" alt="js.png">
+                            <h4>Lord Ganesha Idol </h4>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="collapsible img4">
+                <h3>Iron Crafts</h3>
+                <div class="content">
+                    <div class="inner-content" onclick="showProductDetails('Iron-1')">
+                        <a href="#productDetails">
+                            <img src="./assets/images/Iron/iron1.webp" alt="html.png">
+                            <h4>Tribal Wall Hanging</h4>
+                        </a>
+                    </div>
+                    <div class="inner-content" onclick="showProductDetails('Iron-2')">
+                        <a href="#productDetails">
+                            <img src="./assets/images/Iron/iron2.webp" alt="css.png">
+                            <h4>Musician Ganesha Hanging</h4>
+                        </a>
+                    </div>
+                    <div class="inner-content" onclick="showProductDetails('Iron-3')">
+                        <a href="#productDetails">
+                            <img src="./assets/images/Iron/iron3.webp" height="100px" width="auto" alt="js.png">
+                            <h4>Musician Tribal Hanging</h4>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="collapsible img5">
+                <h3>Brass Crafts</h3>
+                <div class="content">
+                    <div class="inner-content" onclick="showProductDetails('Brass-1')">
+                        <a href="#productDetails">
+                            <img src="./assets/images/Brass/brass1.webp" alt="html.png">
+                            <h4>Goddess Durga Maa</h4>
+                        </a>
+                    </div>
+                    <div class="inner-content" onclick="showProductDetails('Brass-2')">
+                        <a href="#productDetails">
+                            <img src="./assets/images/Brass/brass2.webp" alt="css.png">
+                            <h4>Dhoop Incense Burner</h4>
+                        </a>
+                    </div>
+                    <div class="inner-content" onclick="showProductDetails('Brass-3')">
+                        <a href="#productDetails">
+                            <img src="./assets/images/Brass/brass3.webp" alt="js.png">
+                            <h4>2 Men in Boat Showpiece</h4>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="product-outer">
+            <div class="product-inner" id="productDetails"></div>
+        </div>
+
+
+    </main>
+
+    <footer>
+        <div class="footer-bottom">
+            <div class="container">
+                <img src="./assets/images/payment.png" alt="payment method" class="payment-img">
+                <p class="copyright">
+                    COPYRIGHT &copy; <a href="./home.html">CRAFTCONNECT.IN</a> | ALL RIGHTS RESERVED
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./assets/js/catagory.js"></script>
+    <script src="./assets/js/product.js"></script>
+    <script src="./assets/js/popup.js"></script>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>

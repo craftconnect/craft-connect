@@ -1,0 +1,16 @@
+:root {
+  --salmon-pink: hsl(353, 100%, 78%);
+  --blue1: #01031e;
+  --blue2: #141a22;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--blue1);
+}
+
+main {
+  margin-top: 10%;
+  background-color: var(--blue1);
+}

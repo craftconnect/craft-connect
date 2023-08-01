@@ -1,0 +1,51 @@
+footer {
+  margin: 0;
+  background-color: #141a22;
+  padding: 30px 0;
+  text-align: center;
+}
+
+.payment-img {
+  max-width: 335px;
+  width: 100%;
+  margin: auto;
+  margin-bottom: 15px;
+}
+
+.copyright {
+  color: #ffffff;
+  font-size: 20px;
+}
+
+.copyright a {
+  color: #ffffff;
+}
+
+
+@media screen and (max-width: 768px) {
+
+  footer {
+    margin: 0;
+    background-color: #141a22;
+    padding: 30px 0;
+    text-align: center;
+  }
+  
+  .payment-img {
+    max-width: 335px;
+    width: 60%;
+    margin: auto;
+    margin-bottom: 15px;
+  }
+  
+  .copyright {
+    color: #ffffff;
+    font-size: 12px;
+  }
+  
+  .copyright a {
+    color: #ffffff;
+  }
+  
+
+}
